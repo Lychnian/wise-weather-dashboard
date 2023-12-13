@@ -15,7 +15,7 @@
     <!-- jQuery library for DOM manipulation -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <title>Wise Weather Dashboard</title>
+    <title>WISE WEATHER DASHBOARD</title>
 
 <!-- Page header -->    
 </head>
@@ -25,3 +25,139 @@
     <header>
         <h1>WISE WEATHER DASHBOARD</h1>
     </header>
+
+<!-- Main container -->
+<main>
+    <div class=' main-container container-fluid'>
+        <div class='row'>
+            
+            <!-- Search for a city -->
+            <div id="city-search-section" class="col-md-4">
+                <!-- Form for city search -->
+                <div class="card-body">
+                    <h4>Search For City Weather</h4>
+                    <form class="form-inline">
+                        <!-- Input field for city name -->
+                        <input type="search" placeholder="Enter City Name" id= "search-city-input" class="form-control mr-sm-2 input" />
+                        <!-- Submit button for search -->
+                        <button class="btn btn-primary my-2 my-sm-0 search search-button" type="submit">
+                            <i class="fas fa-search-location"></i>
+                        </button>
+                    </form>
+                
+                    <!-- Search history list -->    
+                    <div class="search-history-container">
+                        <div class="search-history-list"></div>
+                    </div>
+                </div>
+                
+                <!-- Clear history button and image -->
+                <div class="clear-history-wrapper">
+                    <button class="clear-history-button">Clear History</button>
+                    <img src="owl.jpg" alt="Image of a sketch of an owl drawn in white with turquoise background">
+                </div>
+            </div>
+            
+            <!-- Container for weather columns -->
+            <div class="col-md-8 weather-data-container">
+               
+                <!-- Current city weather -->
+                <div class="row">
+                    <div class="card current-weather-card">
+                        <div class="card-body">
+                            <p class="current-date"></p>
+                            <p class="city"></p>
+                            <p class="weather-icon"></p>
+                            <p class="temperature"></p>
+                            <p class="humidity"></p>
+                            <p class="wind"></p>
+                        </div>
+                    </div>
+                </div>                     
+                
+                <!-- 5 day forecast title -->
+                <div class="row">
+                    <div class="five-day-forecast-title">
+                        <div class="cbforecast">
+                            <h5>5-Day Forecast</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 5 Day forecast days -->
+                <div class="row five-day-forecast-days-container">
+                   
+                    <!-- Day 1 -->
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                                <p class="day-one-date"></p>
+                                <p class="day-one-icon"></p>
+                                <p class="day-one-temperature"></p>
+                                <p class="day-one-humidity"></p>
+                                <p class="day-one-wind"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                                <p class="day-two-date"></p>
+                                <p class="day-two-icon"></p>
+                                <p class="day-two-temperature"></p>
+                                <p class="day-two-humidity"></p>
+                                <p class="day-two-wind"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                                <p class="day-three-date"></p>
+                                <p class="day-three-icon"></p>
+                                <p class="day-three-temperature"></p>
+                                <p class="day-three-humidity"></p>
+                                <p class="day-three-wind"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                                <p class="day-four-date"></p>
+                                <p class="day-four-icon"></p>
+                                <p class="day-four-temperature"></p>
+                                <p class="day-four-humidity"></p>
+                                <p class="day-four-wind"></p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <!-- Day 5 -->
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                                <p class="day-five-date"></p>
+                                <p class="day-five-icon"></p>
+                                <p class="day-five-temperature"></p>
+                                <p class="day-five-humidity"></p>
+                                <p class="day-five-wind"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+<!-- JavaScript -->
+<script src='script.js'></script>
+</html>

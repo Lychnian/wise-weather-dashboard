@@ -98,3 +98,96 @@ h1 {
 .clear-history-button:hover {
     background-color: #c82333; /* Darker red on hover, you can change it */
 }
+
+
+/* Little Owl Image Styles */
+.clear-history-wrapper img{
+    width: 100px;
+    height: 120px;
+    margin-left: 60px;
+    border-radius: 50px;
+}
+
+/* Search City Styles */
+.card-body {
+    color: white;
+    font-weight: bolder;
+}
+
+.card-body h4 {
+    color: white;
+    font-weight: bolder;
+}
+
+.city {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    border: none;
+}
+
+.current-weather-card {
+    background-color: #1ca9c9;
+    font: 20px;
+    padding: 2px;
+    border: none;
+    color: white;
+    min-height: 260px;
+}
+
+p.current-date {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.current-weather-card p {
+    color: white;
+}
+
+/* Weather Styles */
+
+
+/* 5-Day Forecast Title Styles */
+h5 {
+ font-size: 26px;
+ font-weight: bolder;
+ margin-top: 40px;
+}
+
+.cbforecast {
+  margin: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+.weather-data-container {
+    margin-left: 0;
+}
+
+.main-container {
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.bg-primary {
+    background-color: #1ca9c9 !important;
+    padding: 2px;
+}
+
+.card.forecast {
+    background-color: #1ca9c9;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 180px;
+    height: 260px;
+}
+
+h6 {
+    font-weight: bolder;
+}

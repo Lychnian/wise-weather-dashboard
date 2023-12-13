@@ -1,0 +1,100 @@
+/* Universal Styles */
+
+/* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-image: url('skyowl.png');
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+
+.header {
+    background-color: transparent;
+    padding: 10px 0;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    background-color: transparent;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+/* Search Section Styles */
+
+/* Form Styles */
+.form-inline {
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+#search-city-input {
+    font-weight: bolder;
+}
+
+/* Search History Styles */
+.search-history-container {
+    width: 250;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 12px;
+    border-radius: 5px;
+    color: white;
+}
+
+.search-history-list {
+    display: block;
+    width: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px; /* Padding inside the box */
+    margin: 5px 0; /* Margin between the boxes */
+    margin-left: 20px;
+    border-radius: 8px; /* Adds rounded corners to the box */
+    color: white;
+    font-weight: bolder;
+}
+
+/* Clear History Button Styles */
+.clear-history-button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #dc3545; 
+    color: #fff; 
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-history-button:hover {
+    background-color: #c82333; /* Darker red on hover, you can change it */
+}

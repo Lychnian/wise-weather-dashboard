@@ -43,3 +43,23 @@ var URLWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName
 
 // URL for 5-days forecast parameters (city name + weather units of measurements)
 var URLForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + '&units=imperial' + apiKey;
+
+// Current day forecast function
+$.ajax({
+    url: URLWeather,
+    method: "GET"
+})
+    .then(function (response) {
+        // Add weather info to page
+        $('.city').html("<h2>" + response.name + "</h2>");
+        $('.weather-icon').html("<img src='https://openweathermap.org/img/w/" + response.weather[0].icon + ".png' >");
+        $('.wind').text("Wind Speed: " + response.wind.speed + " MPH");
+        $('.humidity').text("Humidity: " + response.main.humidity + "%");
+        $(".temperature").text("Temperature: " + response.main.temp + " F");
+});
+
+// 5 day forecast function
+$.ajax({
+    url: URLForecast,
+    method: "GET"
+})

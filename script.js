@@ -115,3 +115,16 @@ $('.clear-history-button').on('click', function () {
     // Clear the stored city names in local storage
     localStorage.clear();
 });
+
+// Append the search input from localStorage to the cities list
+for (var i = 0; i < localStorage.length; i++) {
+    $(".search-history-list").append("<p>" + localStorage.getItem('cityNameStore') + "</p>");
+}
+
+// Displays the date
+var currentDay = moment().format("dddd, MMMM Do");
+
+function functionDay() {
+    $(".current-date").text(currentDay);
+};
+functionDay();

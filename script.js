@@ -96,4 +96,14 @@ $.ajax({
     $(".day-four-humidity").text("Humidity: " + response.list[24].main.humidity + "%");
     $(".day-four-wind").text("Wind Speed: " + response.list[8].wind.speed + " MPH");
 
-    
+    var dayFive = moment(response.list[32].dt_txt).format("ddd, MMM D");
+                // Adds day 5 data to page
+                $(".day-five-temperature").text("Temp: " + response.list[32].main.temp + " F");
+                $(".day-five-date").html("<h6>" + dayFive + "</h6>");
+                $(".day-five-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[32].weather[0].icon + ".png' alt='Icon depicting current weather.'>");
+                $(".day-five-humidity").text("Humidity: " + response.list[32].main.humidity + "%");
+                $(".day-five-wind").text("Wind Speed: " + response.list[8].wind.speed + " MPH");
+                });
+    }
+});
+

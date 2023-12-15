@@ -107,3 +107,11 @@ $.ajax({
     }
 });
 
+// Add event listener for the clear history button
+$('.clear-history-button').on('click', function () {
+    // Clear the search-history-list element
+    $(".search-history-list").empty();
+
+    // Clear the stored city names in local storage
+    localStorage.clear();
+});

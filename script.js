@@ -38,4 +38,8 @@ searchBtnEl.addEventListener('click', function (event) {
         localStorage.setItem('cityNameStore', cityName);
         $(".search-history-list").append("<p>" + cityName + "</p>");
 
-    
+// URL for current day parameters (city name + weather units of measurements)
+var URLWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + '&units=imperial' + apiKey;
+
+// URL for 5-days forecast parameters (city name + weather units of measurements)
+var URLForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + '&units=imperial' + apiKey;

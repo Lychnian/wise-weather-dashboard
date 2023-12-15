@@ -79,3 +79,13 @@ $.ajax({
     $(".day-two-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[8].weather[0].icon + ".png' alt='Icon depicting current weather.'>");
     $(".day-two-humidity").text("Humidity: " + response.list[8].main.humidity + "%");
     $(".day-two-wind").text("Wind Speed: " + response.list[8].wind.speed + " MPH");
+
+    var dayThree = moment(response.list[16].dt_txt).format("ddd, MMM D");
+    // Adds day 3 data to page
+    $(".day-three-temperature").text("Temp: " + response.list[16].main.temp + " F");
+    $(".day-three-date").html("<h6>" + dayThree + "</h6>");
+    $(".day-three-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[16].weather[0].icon + ".png' alt='Icon depicting current weather.'>");
+    $(".day-three-humidity").text("Humidity: " + response.list[16].main.humidity + "%");
+    $(".day-three-wind").text("Wind Speed: " + response.list[8].wind.speed + " MPH");
+
+    

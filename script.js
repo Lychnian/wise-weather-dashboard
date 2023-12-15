@@ -13,6 +13,7 @@ function searchWeather(cityName) {
 
     // Update the input field with the selected city name
     inputEl.value = cityName;
+
      // Trigger the search
     searchBtnEl.click();
 }
@@ -23,3 +24,18 @@ $(".search-history-list").on('click', 'p', function () {
     // Call the function to perform the weather search for the clicked city
     searchWeather(cityName);
 });
+
+// Event listener for search button
+searchBtnEl.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevents the form from submitting and refreshing the page
+
+    // Get the city name from the input field
+    var cityName = inputEl.value.trim();
+
+    // Check if the user entered a city name
+    if (cityName !== "") {
+        // Set the cityName in localStorage
+        localStorage.setItem('cityNameStore', cityName);
+        $(".search-history-list").append("<p>" + cityName + "</p>");
+
+    

@@ -63,3 +63,12 @@ $.ajax({
     url: URLForecast,
     method: "GET"
 })
+.then(function (response) {
+    var dayOne = moment(response.list[0].dt_txt).format("ddd, MMM D");
+    // Adds day 1 data to page
+    $(".day-one-temperature").text("Temp: " + response.list[0].main.temp + " F");
+    $(".day-one-date").html("<h6>" + dayOne + "</h6>");
+    $(".day-one-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png' alt='Icon depicting current weather.'>");
+    $(".day-one-humidity").text("Humidity: " + response.list[0].main.humidity + "%");
+    $(".day-one-wind").text("Wind Speed: " + response.list[8].wind.speed + " MPH"); 
+    

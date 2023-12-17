@@ -16,7 +16,7 @@ html, body {
 body {
     width: 100vw;
     font-family: Arial, sans-serif;
-    background-image: url('skyowl.png');
+    background-image: url('../images/skyowl.png');
     background-size: cover; /* Ensures the image covers the entire body */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed;

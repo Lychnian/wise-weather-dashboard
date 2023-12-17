@@ -105,6 +105,31 @@ Visit the live Wise Weather Dashboard application at the following URL: https://
 
 
 
+![Wise Weather Dashboard](https://github.com/Lychnian/wise-weather-dashboard/assets/140586279/83567e33-d50c-4c4f-8246-2af46315fcf2)
+
+
+
+
+![Searches](https://github.com/Lychnian/wise-weather-dashboard/assets/140586279/6fbe35d8-12a3-4de0-9bcf-6f62680c7027)
+
+
+
+
+![Dev Tools No Errors No Issues](https://github.com/Lychnian/wise-weather-dashboard/assets/140586279/071a0609-751c-4cc6-8c00-09b0db2ecc83)
+
+
+
+
+![Responsive Design 1](https://github.com/Lychnian/wise-weather-dashboard/assets/140586279/05398a07-dd47-40ec-9fb7-c4414e1f03b6)
+
+
+
+
+![Responsive Design 2](https://github.com/Lychnian/wise-weather-dashboard/assets/140586279/4055585f-bfd8-48a8-b82c-096fa2d046cf)
+
+
+
+
 ## How to Contribute
 
 [Contributor Covenant](https://www.contributor-covenant.org/)  

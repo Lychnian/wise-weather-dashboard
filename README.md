@@ -1,4 +1,6 @@
 # WISE WEATHER DASHBOARD
+![owl](https://github.com/Lychnian/wise-weather-dashboard/assets/140586279/7a4b0ce3-8124-4e6b-99d2-cb3c26d3b8b0)
+
 
 
 
